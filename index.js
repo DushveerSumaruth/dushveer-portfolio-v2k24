@@ -240,20 +240,21 @@ viewProjects.addEventListener('click', function() {
 });
 
 
+// Function to check if the user agent is Samsung Internet Browser
 function isSamsungBrowser() {
   return navigator.userAgent.match(/SamsungBrowser/i);
 }
 
-// Function to prompt the user to open the website in another browser
-function promptToOpenInAlternativeBrowser() {
+// Function to redirect to another browser
+function redirectToAlternativeBrowser() {
   if (isSamsungBrowser()) {
-    var confirmSwitch = confirm('Samsung browsers force their own colors when the dark mode feature of your phone is turned on, for the best experience, we recommend using another browser. Would you like to open this website in another browser?');
-    if (confirmSwitch) {
-      // Open the website in another browser
-      window.open('https://www.google.com/', '_blank');
-    }
+    // Placeholder URL or generic website
+    var placeholderUrl = 'https://www.google.com/';
+
+    // Open the placeholder URL in another browser
+    window.open(placeholderUrl, '_blank');
   }
 }
 
-// Call the prompt function when the page loads
-window.onload = promptToOpenInAlternativeBrowser;
+// Call the redirection function when the page loads
+window.onload = redirectToAlternativeBrowser;
