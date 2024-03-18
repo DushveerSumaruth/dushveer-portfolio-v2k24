@@ -81,7 +81,7 @@ burgerBtn.addEventListener('click', function() {
                     openImg.style.display = 'block';
                 });
             }
-        };        
+        };
     } else {
         burgerBtn.setAttribute('aria-expanded', 'true');
         closeImg.style.display = 'none';
@@ -93,7 +93,7 @@ burgerBtn.addEventListener('click', function() {
 
 
 
-// Anchor links for mobile 
+// Anchor links for mobile
 
 const anchorsX = document.querySelectorAll('.anchor-mb');
 
@@ -136,7 +136,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 
-// Send and receive emails 
+// Send and receive emails
 
 const form = document.querySelector('form');
 const firstName = document.getElementById('first-name');
@@ -240,3 +240,8 @@ viewProjects.addEventListener('click', function() {
 });
 
 
+// Detect Samsung Internet Browser user agent
+if (navigator.userAgent.match(/SamsungBrowser/i)) {
+  // Redirect to a different URL or open in a different browser
+  window.location.href = 'https://www.google.com/';
+}
