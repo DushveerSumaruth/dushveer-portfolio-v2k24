@@ -240,21 +240,17 @@ viewProjects.addEventListener('click', function() {
 });
 
 
-// Function to check if the user agent is Samsung Internet Browser
 function isSamsungBrowser() {
   return navigator.userAgent.match(/SamsungBrowser/i);
 }
 
-// Function to redirect to another browser
-function redirectToAlternativeBrowser() {
+// Function to notify the user
+function notifyToSwitchBrowser() {
   if (isSamsungBrowser()) {
-    // Placeholder URL or generic website
-    var placeholderUrl = 'https://www.google.com/';
-
-    // Open the placeholder URL in another browser
-    window.open(placeholderUrl, '_blank');
+    // Display an alert message
+    alert('Note that the Samsung browser may change the appearance of this website by forcing its own colors, for a better experience switch to Chrome or another browser :(:');
   }
 }
 
-// Call the redirection function when the page loads
-window.onload = redirectToAlternativeBrowser;
+// Call the notification function when the page loads
+window.onload = notifyToSwitchBrowser;
