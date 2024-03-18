@@ -240,8 +240,20 @@ viewProjects.addEventListener('click', function() {
 });
 
 
-// Detect Samsung Internet Browser user agent
-if (navigator.userAgent.match(/SamsungBrowser/i)) {
-  // Redirect to a different URL or open in a different browser
-  window.location.href = 'https://www.google.com/';
+function isSamsungBrowser() {
+  return navigator.userAgent.match(/SamsungBrowser/i);
 }
+
+// Function to prompt the user to open the website in another browser
+function promptToOpenInAlternativeBrowser() {
+  if (isSamsungBrowser()) {
+    var confirmSwitch = confirm('Samsung browsers force their own colors when the dark mode feature of your phone is turned on, for the best experience, we recommend using another browser. Would you like to open this website in another browser?');
+    if (confirmSwitch) {
+      // Open the website in another browser
+      window.open('https://www.google.com/', '_blank');
+    }
+  }
+}
+
+// Call the prompt function when the page loads
+window.onload = promptToOpenInAlternativeBrowser;
