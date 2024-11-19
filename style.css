@@ -66,7 +66,6 @@ header > hr {
 
 .anchor-links {
     display: flex;
-    margin-top: 40px;
     width: 635px;
     z-index: 999;
     justify-content: center;
@@ -723,9 +722,9 @@ textarea:focus-visible {
 /* 2022 section */
 
 .sec-2022 {
-    margin-top: 40px;
+    margin: 50px 0px 50px 0px;
     padding: 10px;
-    height: 400px;
+    height: fit-content;
     align-items: center;
     justify-content: space-around;
     width: 100%;
@@ -733,9 +732,9 @@ textarea:focus-visible {
 }
 
 .sec-2023 {
-    margin-top: -37px;
+    margin: 50px 0px 50px 0px;
     padding: 10px;
-    height: 400px;
+    height: fit-content;
     align-items: center;
     justify-content: space-around;
     width: 100%;
@@ -743,9 +742,9 @@ textarea:focus-visible {
 }
 
 .sec-2024 {
-    margin-top: -10px;
+    margin: 50px 0px 50px 0px;
     padding: 10px;
-    height: 400px;
+    height: fit-content;
     align-items: center;
     justify-content: space-around;
     width: 100%;
@@ -1029,7 +1028,7 @@ textarea:focus-visible {
     .sec-2022, .sec-2023, .sec-2024 {
         margin-top: 50px;
         padding: 8px;
-        /* height: 475px; */
+        height: 475px;
         align-items: center;
         width: 100%;
         flex-direction: column;
@@ -1064,6 +1063,9 @@ textarea:focus-visible {
         width: 95% !important;
     }
 
+    .sec-2024 {
+      margin: 50px 0px 90px 0px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1078,9 +1080,14 @@ textarea:focus-visible {
         width: 400px;
     }
 
-    .sec-2023 {
-        margin: 161px 0px 241px 0px;
+    .sec-2022 {
+        margin: -121px 0px 0px 0px;
     }
+
+  .sec-2024 {
+    margin: 50px 0px 330px 0px;
+  }
+
 }
 
 @media (max-width: 400px) {
@@ -1096,9 +1103,18 @@ textarea:focus-visible {
         font-size: 12px;
     }
 
-    .sec-2023 {
-        margin: 30px 0px 93px 0px;
+      .sec-2023 {
+        margin: -100px 0px 0px 0px;
+      }
+
+    .sec-2022 {
+      margin: -140px 0px 0px 0px;
     }
+
+    .sec-2024 {
+        margin: 50px 0px 200px 0px;
+    }
+
 }
 
 @media (max-width: 338px) {
@@ -1183,9 +1199,6 @@ textarea:focus-visible {
 
 @media (max-width: 630px) {
 
-    .x-1 {
-      margin-bottom: 120px !important;
-    }
 
     .dialog-window {
         width: 459px;
@@ -1213,11 +1226,6 @@ textarea:focus-visible {
 }
 
 @media (max-width: 501px) {
-
-      .x-1 {
-          margin-bottom: 180px !important;
-        }
-
     .into-section {
         font-size: 24px;
         padding: 0;
@@ -1410,12 +1418,12 @@ textarea:focus-visible {
 
     .card {
         width: 100%;
-        height: 529px;
+        height: fit-content;
     }
 
-    .sec-2023 {
+    /* .sec-2023 {
         margin: 30px 0px 170px 0px;
-    }
+    } */
 
     .section-2-title {
         font-size: 25px;
@@ -1536,17 +1544,6 @@ textarea:focus-visible {
 @media (max-width: 500px) {
     .project-card {
         width: 300px;
-    }
-}
-
-
-@media (max-width: 401px) {
-    .sec-2023 {
-        margin: 0px 0px 0px 0px !important;
-    }
-
-    .x-1 {
-      margin-bottom: 100px !important;
     }
 }
 
