@@ -841,6 +841,9 @@ textarea:focus-visible {
     font-family: "Josefin Sans", sans-serif;
     background: #14142D;
 }
+
+
+
 /* 2022 section */
 
 .main-sections-container {
@@ -1040,34 +1043,32 @@ textarea:focus-visible {
     }
 }
 
-@media (max-width: 730px) {
-    .card {
-        width: 600px
-    }
-
-    .sec-2022, .sec-2023, .sec-2024 {
-        margin-top: 70px;
-    }
-
-}
-
 @media (max-width: 600px) {
-    .card {
-        width: 500px;
-    }
+  .section-2-title {
+    font-size: 30px !important;
+  }
 
-    .sec-2023 {
-        margin-bottom: 161px;
-    }
+  .update-input {
+    width: 93% !important;
+  }
 
-    .update-input {
-        width: 95% !important;
-    }
+  .card-title {
+    font-size: 18px;
+  }
 
-    .sec-2024 {
-      margin: 50px 0px 90px 0px;
-    }
+  .card-desc {
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  .sec-2022,
+  .sec-2023,
+  .sec-2024 {
+    height: fit-content !important;
+  }
 }
+
+
 
 @media (max-width: 500px) {
 
@@ -1077,48 +1078,15 @@ textarea:focus-visible {
         height: fit-content;
     }
 
-    .card {
-        width: 400px;
-    }
-
-    .sec-2022 {
-        margin: -121px 0px 0px 0px;
-    }
-
-  .sec-2024 {
-    margin: 50px 0px 330px 0px;
-  }
-
-}
-
-@media (max-width: 400px) {
-    .section-2-title {
-        font-size: 30px;
-    }
-
-    .card-title {
-        font-size: 19px;
-    }
-
-    .card-desc {
-        font-size: 12px;
-    }
-
-      .sec-2023 {
-        margin: -100px 0px 0px 0px;
-      }
-
-    .sec-2022 {
-      margin: -140px 0px 0px 0px;
-    }
-
-    .sec-2024 {
-        margin: 50px 0px 200px 0px;
+    .project-banner>h4 {
+      font-weight: 900;
+      font-size: 22px;
     }
 
 }
 
-@media (max-width: 338px) {
+
+@media (max-width: 450px) {
     .card-img > img {
         width: 134px;
     }
@@ -1132,21 +1100,21 @@ textarea:focus-visible {
     }
 
     .card-title {
-        font-size: 12px;
-    }
-
-    .section-2-title {
-        font-size: 22px;
+      font-size: 13px;
     }
 
     .card-desc {
-        font-size: 11px;
-        width: 262px;
+      font-size: 13px;
+      line-height: 23px;
     }
+}
 
-    .sec-2023 {
-        margin: 0px 0px 0px 0px;
-    }
+
+@media (max-width: 357px) {
+
+  .card-title {
+    font-size: 12px;
+  }
 }
 /* years sections responsiveness */
 
@@ -1413,24 +1381,10 @@ textarea:focus-visible {
 
 
 @media (max-width: 500px) {
-    .card-title {
-        font-size: 16px;
-    }
-
-    .card {
-        width: 100%;
-        height: fit-content;
-    }
 
     /* .sec-2023 {
         margin: 30px 0px 170px 0px;
     } */
-
-    .section-2-title {
-        font-size: 25px;
-        margin-top: 175px;
-        margin-bottom: 30px;
-    }
 
     @keyframes rotate {
         0% {
