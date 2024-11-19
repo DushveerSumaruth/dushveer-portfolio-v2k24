@@ -66,6 +66,7 @@ header > hr {
 
 .anchor-links {
     display: flex;
+    margin-top: 40px;
     width: 635px;
     z-index: 999;
     justify-content: center;
